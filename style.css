@@ -101,32 +101,54 @@ button:hover{
   border: 4px solid #1e3a8a;
  
 }
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column; /* Stack items on small screens */
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+.about-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0077b6;
+    margin-bottom: 20px;
+}
+.about-text {
+    max-width: 700px;
+}
+
+.about-text h2 {
+    color: #0077b6;
+    margin-bottom: 15px;
+}
  
 
-/* Two column area for skills & experience */
-.two-columns{
-  display:flex;
-  gap:24px;
-  margin-top:18px;
-}
-.skills, .experience{
-  flex:1 1 0;
-  background: #fbfdff;
-  padding:12px 14px;
-  border-radius:10px;
-  border:1px solid rgba(16,24,40,0.04);
-}
-.skills h3, .experience h3, .education h3, .contact h3{
-  margin:0 0 8px;
-  font-size:0.95rem;
-}
-.skills ul, .experience ul{margin:0; padding-left:18px; color:#0f172a}
-.skills li, .experience li{margin-bottom:6px}
 
-/* Education & Contact */
-.education{margin-top:14px}
-.contact{margin-top:16px}
-.contact-buttons{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px}
+.about-text h2 {
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    background: #e3f2fd;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
 
 /* Project boxes */
 .project {
@@ -229,6 +251,10 @@ footer{
     background: #1e3a8a;
     border-radius: 5px;
   }
+ .about{
+  text-align: left;
+  
+ }
 
   .home-hero {
     padding: 60px 20px;
@@ -270,4 +296,5 @@ footer{
     font-size: 1.6em;
   }
 }
+
 
